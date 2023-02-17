@@ -1,0 +1,2 @@
+gifs/teaser_sled_day.gif filter=lfs diff=lfs merge=lfs -text
+gifs/teaser_sled_night.gif filter=lfs diff=lfs merge=lfs -text

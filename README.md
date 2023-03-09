@@ -18,7 +18,7 @@ Parts of this code were originally inspired by the one of the Cooperative Drivin
 
 ## Downloading the dataset
 
-The webpage for downloading the dataset is not yet available, and will be added shortly.
+If you do not wish to regenerate the dataset, you can download it directly from the [following webpage](https://datasets.hds.utc.fr/share/4Z5KzXjwwJOlAJM).
 
 ## Installation
 

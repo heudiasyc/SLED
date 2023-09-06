@@ -6,10 +6,12 @@
 This repository holds the code to generate the Synthetic LiDAR Events Depths (SLED) dataset, as described in the "Learning to Estimate Two Dense Depths from LiDAR and Event Data" article. If you use this code as part of your work, please cite:
 
 ```BibTeX
-@inproceedings{Brebion2023LearningToET,
+@inproceedings{Brebion2023LearningTE,
   title={Learning to Estimate Two Dense Depths from LiDAR and Event Data},
   author={Vincent Brebion and Julien Moreau and Franck Davoine},
-  booktitle={Scandinavian Conference on Image Analysis},
+  booktitle={Image Analysis},
+  publisher={Springer Nature Switzerland},
+  pages={517-533},
   year={2023}
 }
 ```
@@ -40,7 +42,7 @@ pip3 install -U carla==0.9.14
 
 ### Tweaking NumPy's data compression
 
-Generating the full dataset without compression will result in a size on disk between 1.5 and 1.6 TB. In order to save some space, we rather save generated data as a compressed version, resulting in a size on disk between 500 and 600 GB.
+Generating the full dataset without compression will result in a size on disk between 1.5 and 1.6 TB. In order to save some space, we save generated data as a compressed version, resulting in a size on disk between 500 and 600 GB.
 
 However, when trying to save data with compression enabled in NumPy, a default high compression level is used, which is very time-consuming.
 

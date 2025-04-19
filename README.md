@@ -7,10 +7,12 @@ This repository holds the code to generate the Synthetic LiDAR Events Depths (SL
 
 ```BibTeX
 @inproceedings{Brebion2023LearningTE,
-  title={Learning to Estimate Two Dense Depths from LiDAR and Event Data},
+  title={Learning to Estimate Two Dense Depths from {LiDAR} and Event Data},
   author={Vincent Brebion and Julien Moreau and Franck Davoine},
-  booktitle={Image Analysis},
-  publisher={Springer Nature Switzerland},
+  booktitle={Image Analysis - 22nd Scandinavian Conference, {SCIA} 2023, Sirkka, Finland, April 18-21, 2023, Proceedings, Part {II}},
+  series={Lecture Notes in Computer Science},
+  volume={13886},
+  publisher={Springer},
   pages={517-533},
   year={2023}
 }
@@ -20,7 +22,7 @@ Parts of this code were originally inspired by the one of the Cooperative Drivin
 
 ## Downloading the dataset
 
-If you do not wish to regenerate the dataset, you can download it directly from the [following webpage](https://datasets.hds.utc.fr/share/4Z5KzXjwwJOlAJM).
+If you do not wish to regenerate the dataset, you can download it directly from the [following webpage](https://datasets.hds.utc.fr/share/g1z78rPKp1ykVe6).
 
 ## Installation
 
@@ -213,7 +215,7 @@ depth_images_with_ts = sequence["depth_images"].copy()
 
 - the second dimension contains the timestamps (in seconds) at which the data was produced in CARLA (for synchronization with the other sensors), expressed as floats.
 
-For instance, if you want to read the depth value of the top left pixel of the very depth image in the sequence, you can use the following code:
+For instance, if you want to read the depth value of the top left pixel of the very first depth image in the sequence, you can use the following code:
 
 ```py
 # Get the depth image
